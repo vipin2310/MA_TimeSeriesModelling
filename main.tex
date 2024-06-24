@@ -1,0 +1,109 @@
+\documentclass[12pt,a4paper]{report}
+\input{config}
+
+\author{Vipin Singh}
+\title{MA_Thesis}
+\date{\today}
+
+\begin{document}
+    \input{titlepage}
+
+    % Abstract
+    {
+		\FloatBarrier
+		\newpage
+        \setcounter{page}{2}
+		\phantomsection
+		\addcontentsline{toc}{chapter}{Abstract}
+		\thispagestyle{plain}
+		\vspace*{\fill}
+			\section*{{\Large Abstract}}
+			\input{00_abstract/abstract}
+		\vspace*{\fill}
+	}
+
+    % Table of contents
+    {
+        \FloatBarrier
+        \newpage
+        \phantomsection
+        \addcontentsline{toc}{chapter}{Contents}
+        \tableofcontents
+    }
+
+    % Glossary
+	{
+		\FloatBarrier %Verhindert Fehlpositionierung von Abbildungen aus vorherigen Abschnitten
+		\newpage
+		\phantomsection
+		\addcontentsline{toc}{chapter}{Glossary}
+		\printglossary[title=Glossary, type=\acronymtype]
+		\input{glossary}
+	}
+
+    % Introduction
+	{
+		\FloatBarrier
+		\chapter{Introduction}
+		\label{chp:introduction}
+		\input{01_introduction/introduction}
+	}
+
+    % Basics of Time Series Modelling
+	{
+		\FloatBarrier
+		\chapter{Basics of Time Series Modelling}
+		\label{chp:basicsTimeSeries}
+		\input{02_basicsTimeSeries/basicsTimeSeries}
+	}
+
+    % Data
+	{
+		\FloatBarrier
+		\chapter{Data}
+		\label{chp:data}
+		\input{03_data/data}
+	}
+
+    % Methods
+	{
+		\FloatBarrier
+		\chapter{Methods}
+		\label{chp:methods}
+		\input{04_methods/methods}
+	}
+
+    % Implementation and Training
+	{
+		\FloatBarrier
+		\chapter{Implementation and Training}
+		\label{chp:implementationAndTraining}
+		\input{05_implementationAndTraining/implementationAndTraining}
+	}
+
+    % Model Robustness
+	{
+		\FloatBarrier
+		\chapter{Model Robustness}
+		\label{chp:modelRobustness}
+		\input{06_modelRobustness/modelRobustness}
+	}
+
+    % Summary and Conclusion
+    {
+        \FloatBarrier
+        \chapter{Summary and Conclusion}
+        \label{chp:summaryAndConclusion}
+        \input{07_summaryAndConclusion/summaryAndConclusion}
+    }
+
+    % References
+	{
+		\FloatBarrier
+		\newpage
+		\phantomsection
+		\addcontentsline{toc}{chapter}{References}
+		\printbibliography[title = References]
+	}
+
+\end{document}
