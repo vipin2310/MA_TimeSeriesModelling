@@ -1,0 +1,27 @@
+# Mac stuff
+*.DS_Store
+
+# Some Latex stuff
+*.aux
+*.log
+*.toc
+*.lof
+*.dvi
+*.tks
+*.gz
+*.run.xml
+*.blg
+*.bcf
+*.bbl
+*.acn
+*.acr
+*.alg
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.glsdefs
+*.ist
+*.out
+*.gls
+*.bak
